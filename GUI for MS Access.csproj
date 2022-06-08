@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2761F144-B07C-4A92-92F2-202B7830DEAA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI_for_MS_Access</RootNamespace>
+    <AssemblyName>GUI for MS Access</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormSearch1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearch1.Designer.cs">
+      <DependentUpon>FormSearch1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearch2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearch2.Designer.cs">
+      <DependentUpon>FormSearch2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearch3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearch3.Designer.cs">
+      <DependentUpon>FormSearch3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAuthors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAuthors.Designer.cs">
+      <DependentUpon>FormAuthors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDegree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDegree.Designer.cs">
+      <DependentUpon>FormDegree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOccupation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOccupation.Designer.cs">
+      <DependentUpon>FormOccupation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPublishingHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPublishingHouse.Designer.cs">
+      <DependentUpon>FormPublishingHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUDC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUDC.Designer.cs">
+      <DependentUpon>FormUDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_Articles_AuthorsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Articles_AuthorsDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormDegree.resx">
+      <DependentUpon>FormDegree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOccupation.resx">
+      <DependentUpon>FormOccupation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPublishingHouse.resx">
+      <DependentUpon>FormPublishingHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearch1.resx">
+      <DependentUpon>FormSearch1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearch2.resx">
+      <DependentUpon>FormSearch2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearch3.resx">
+      <DependentUpon>FormSearch3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUDC.resx">
+      <DependentUpon>FormUDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAuthors.resx">
+      <DependentUpon>FormAuthors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_Articles_AuthorsDataSet.xsc">
+      <DependentUpon>_Articles_AuthorsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Articles_AuthorsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Articles_AuthorsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Articles_AuthorsDataSet.xss">
+      <DependentUpon>_Articles_AuthorsDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Articles&amp;Authors.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
