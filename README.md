@@ -1,4 +1,4 @@
-# UTMN Tic Tac Toe
+# UTMN / Tic Tac Toe
 
 Простая игра в крестики-нолики.
 
