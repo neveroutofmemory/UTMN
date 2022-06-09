@@ -1,4 +1,4 @@
-# UTMN GUI for MS Access
+# UTMN / GUI for MS Access
 
 Основная форма — MainForm — содержит таблицу Articles, которую можно редактировать.
 
